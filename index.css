@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  border-bottom: 1px solid black;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+header a:hover {
+  color: orange;
+  transition: 0.5s;
+}
+
+header a:active {
+  color: red;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+.logoBox {
+  width: 150px;
+}
+.logo {
+  width: 100px;
+}
+
+.iconBox {
+  font-size: 22px;
+  display: flex;
+  gap: 20px;
+}
+main {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productsBox {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+.cardImg {
+    width: 200px;
+    border-radius: 15px;
+}
+
+.btnCard {
+    border: none;
+    padding: 10px 0;
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btnCard:hover {
+    background-color: orangered;
+}
+.btnCard:active {
+    background-color: green;
+}
