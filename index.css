@@ -46,11 +46,37 @@ nav {
 .logo {
   width: 100px;
 }
-
+.fa-bars {
+  display: none;
+}
 .iconBox {
   font-size: 22px;
   display: flex;
   gap: 20px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 25px
+}
+.more {
+ position: relative;
+}
+.more:hover .drop {
+  display: block;
+}
+.drop {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 100%;
 }
 main {
   width: 90%;
@@ -96,4 +122,44 @@ main {
 }
 .btnCard:active {
     background-color: green;
+}
+
+@media screen and (min-width:300px) and (max-width:576px) {
+  .card {
+    width: 45%;
+  }
+  .cardImg {
+    width: 100%;
+  }
+  .navBar {
+    display: none;
+  }
+  .iconBox {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width:577px) and (max-width: 768px) {
+  .card {
+    width: 30%;
+  }
+  .cardImg {
+    width: 100%;
+  }
+  .navBar {
+    display: none;
+  }
+  .iconBox {
+    display: none;
+  }
+
+  .aaa {
+    display: block;
+    font-size: 32px;
+  }
 }
